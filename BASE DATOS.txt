@@ -1,0 +1,148 @@
+backup database FincaAgricolaDB 
+to Disk = 'C:\Proyectos VisualStudio\PAV_P2_Grupo 1\FincaAgricolaDB_Full_V1'
+-- Crear la base de datos
+CREATE DATABASE FincaAgricolaDB;
+GO
+USE FincaAgricolaDB;
+GO
+
+-- Tablas propias del sistema (además de Identity)
+-- Productos
+CREATE TABLE Productos (
+    Id INT IDENTITY PRIMARY KEY,
+	IdUsuarioCreador NVARCHAR(MAX)		NOT NULL,
+    Nombre NVARCHAR(100)				NOT NULL,
+    Descripcion NVARCHAR(255)			NOT NULL,
+    Precio DECIMAL(10,2)				NOT NULL,
+	CONSTRAINT FK_Productos_Usuarios FOREIGN KEY (IdUsuarioCreador) REFERENCES AspNetusers(Id)
+);
+
+INSERT INTO Productos (Nombre, Descripcion, Precio) VALUES
+('Tomate', 'Tomate rojo, orgánico', 1.50),
+('Lechuga', 'Lechuga romana fresca', 0.90),
+('Maíz', 'Maíz dulce en mazorca', 0.70),
+('Zanahoria', 'Zanahoria cultivada sin químicos', 0.60),
+('Papa', 'Papa blanca premium', 1.10),
+('Fresas', 'Fresas recién cosechadas', 2.00),
+('Cebolla', 'Cebolla amarilla', 0.80),
+('Pimientos', 'Pimientos variados (rojo, verde)', 1.20),
+('Calabacín', 'Calabacín orgánico', 1.00),
+('Espinaca', 'Espinaca fresca en hoja', 1.30);
+
+-- Maquinaria
+CREATE TABLE Maquinarias (
+    Id INT IDENTITY PRIMARY KEY,	
+	IdUsuarioCreadorM NVARCHAR(MAX)		NOT NULL,
+    Nombre NVARCHAR(100),
+    Descripcion NVARCHAR(255),
+    Marca NVARCHAR(50),
+    Modelo NVARCHAR(50),
+	CONSTRAINT FK_Maquinarias_Usuarios FOREIGN KEY (IdUsuarioCreadorM) REFERENCES AspNetusers(Id)
+);
+
+INSERT INTO Maquinarias (Nombre, Descripcion, Marca, Modelo) VALUES
+('Tractor', 'Tractor para preparación de terreno', 'John Deere', 'JD5050'),
+('Cosechadora', 'Máquina para cosechar productos', 'New Holland', 'CR7.90'),
+('Sembradora', 'Sembradora automática de precisión', 'Kubota', 'VP-8'),
+('Fumigadora', 'Equipo para fumigación de cultivos', 'Husqvarna', 'Backpack 350'),
+('Sistema de riego', 'Riego por aspersión automatizado', 'Rain Bird', 'ESP-TM2');
+
+-- Preguntas
+CREATE TABLE Preguntas (
+    Id INT IDENTITY PRIMARY KEY,	
+	IdUsuarioCreadorP NVARCHAR(MAX)		NOT NULL,
+    Titulo NVARCHAR(100),
+    Contenido NVARCHAR(MAX),
+    Fecha DATETIME DEFAULT GETDATE(),
+	CONSTRAINT FK_Preguntas_Usuarios FOREIGN KEY (IdUsuarioCreadorP) REFERENCES AspNetusers(Id)
+);
+
+INSERT INTO AspNetRoles (Id, Name, NormalizedName, ConcurrencyStamp)
+VALUES
+(NEWID(), 'Administrador', 'ADMINISTRADOR', NEWID()),
+(NEWID(), 'Cliente', 'CLIENTE', NEWID());
+
+
+-- Insertar usuario con campos personalizados
+INSERT INTO AspNetUsers (
+    Id,
+    UserName,
+    NormalizedUserName,
+    Email,
+    NormalizedEmail,
+    EmailConfirmed,
+    PasswordHash,
+    SecurityStamp,
+    ConcurrencyStamp,
+    PhoneNumberConfirmed,
+    TwoFactorEnabled,
+    LockoutEnabled,
+    AccessFailedCount,
+    Nombre,
+    Apellidos,
+    Direccion
+)
+VALUES (
+    NEWID(), -- Id
+    'usuario1', -- UserName
+    'USUARIO1', -- NormalizedUserName
+    'usuario1@email.com', -- Email
+    'USUARIO1@EMAIL.COM', -- NormalizedEmail
+    1, -- EmailConfirmed
+    'AQAAAAEAACcQAAAAEH6DOy67tF4mlOcqz06Kh14FP2LUOf8ZmX53D+ItT5JcNnvA0ljjkYKguOlO7spnGA==', -- Hash para 'Test123!'
+    NEWID(), -- SecurityStamp
+    NEWID(), -- ConcurrencyStamp
+    0, -- PhoneNumberConfirmed
+    0, -- TwoFactorEnabled
+    0, -- LockoutEnabled
+    0, -- AccessFailedCount
+    'Juan', -- Nombre
+    'Pérez', -- Apellidos
+    'Calle Fallas 123' -- Direccion
+);
+
+INSERT INTO AspNetUsers (
+    Id,
+    UserName,
+    NormalizedUserName,
+    Email,
+    NormalizedEmail,
+    EmailConfirmed,
+    PasswordHash,
+    SecurityStamp,
+    ConcurrencyStamp,
+    PhoneNumberConfirmed,
+    TwoFactorEnabled,
+    LockoutEnabled,
+    AccessFailedCount,
+    Nombre,
+    Apellidos,
+    Direccion
+)
+VALUES (
+    NEWID(), -- Id
+    'mariag', -- UserName
+    'MARIAG', -- NormalizedUserName
+    'maria.gomez@email.com', -- Email
+    'MARIA.GOMEZ@EMAIL.COM', -- NormalizedEmail
+    1, -- EmailConfirmed
+    'AQAAAAEAACcQAAAAEH6DOy67tF4mlOcqz06Kh14FP2LUOf8ZmX53D+ItT5JcNnvA0ljjkYKguOlO7spnGA==', -- PasswordHash de 'Test123!'
+    NEWID(), -- SecurityStamp
+    NEWID(), -- ConcurrencyStamp
+    0, -- PhoneNumberConfirmed
+    0, -- TwoFactorEnabled
+    0, -- LockoutEnabled
+    0, -- AccessFailedCount
+    'María', -- Nombre
+    'Gómez', -- Apellidos
+    'Av. Central 456, Ciudad Campo' -- Direccion
+);
+
+
+SELECT * FROM AspNetUsers
+SELECT * FROM AspNetRoles
+SELECT * FROM AspNetUserRoles
+
+INSERT INTO AspNetUserRoles(UserId, RoleId) 
+	VALUES	('0634499A-1643-4EB6-AD1B-11F0B357B89E', '14485924-2D1E-43B4-AA2C-0EAF620232B8'), 
+			('1A7AABB1-D3A2-4904-A427-070DF88906A6', '9918B1E8-16A5-4580-A281-5FEAB4A8B7BD')
