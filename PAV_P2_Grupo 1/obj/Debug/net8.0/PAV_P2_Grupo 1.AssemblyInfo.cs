@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAV_P2_Grupo 1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0b7853912a85c8c43c8d3b1ec17f784aa8ebde1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+939c2b62c1b834db2b1c544e4b020dfa76d4641e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAV_P2_Grupo 1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAV_P2_Grupo 1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
