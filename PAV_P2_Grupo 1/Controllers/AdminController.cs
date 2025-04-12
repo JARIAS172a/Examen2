@@ -1,78 +1,76 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using PAV_P2_Grupo_1.Data;
 using PAV_P2_Grupo_1.Models;
-using System.Linq;
-using System.Threading.Tasks;
 
-[Authorize(Roles = "Administrador")]
-public class AdminController : Controller
+namespace PAV_P2_Grupo_1.Controllers
 {
-    private readonly UserManager<ApplicationUser> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
-
-    public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+    //[Authorize(Roles = "Administrador")]
+    public class AdminController : Controller
     {
-        _userManager = userManager;
-        _roleManager = roleManager;
-    }
+        private readonly UserManager<ApplicationUser> _userManager;
 
-    public IActionResult Index()
-    {
-        var users = _userManager.Users.ToList();
-        return View(users);
-    }
-
-    // Métodos para CRUD (Crear, Leer, Actualizar, Eliminar) de usuarios
-
-    public async Task<IActionResult> Edit(string id)
-    {
-        var user = await _userManager.FindByIdAsync(id);
-        if (user == null)
+        public AdminController(UserManager<ApplicationUser> userManager)
         {
-            return NotFound();
-        }
-        return View(user);
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Edit(ApplicationUser user)
-    {
-        var existingUser = await _userManager.FindByIdAsync(user.Id);
-        if (existingUser == null)
-        {
-            return NotFound();
+            _userManager = userManager;
         }
 
-        existingUser.Nombre = user.Nombre;
-        existingUser.Apellidos = user.Apellidos;
-        existingUser.Email = user.Email;
-        existingUser.Direccion = user.Direccion;
-
-        var result = await _userManager.UpdateAsync(existingUser);
-        if (result.Succeeded)
+        public async Task<IActionResult> Index()
         {
+            var users = await _userManager.Users.ToListAsync();
+            return View(users);
+        }
+
+        public async Task<IActionResult> Edit(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            return View(user);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ApplicationUser model)
+        {
+            var user = await _userManager.FindByIdAsync(model.Id);
+            if (user == null)
+                return NotFound();
+
+            user.Nombre = model.Nombre;
+            user.Apellidos = model.Apellidos;
+            user.Direccion = model.Direccion;
+            user.Email = model.Email;
+            user.UserName = model.Email;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+                return RedirectToAction(nameof(Index));
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            return View(user);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            await _userManager.DeleteAsync(user);
             return RedirectToAction(nameof(Index));
         }
-
-        return View(user);
-    }
-
-    public async Task<IActionResult> Delete(string id)
-    {
-        var user = await _userManager.FindByIdAsync(id);
-        if (user == null || user.EmailConfirmed) // Cambia esta condición según tu implementación
-        {
-            return NotFound();
-        }
-
-        var result = await _userManager.DeleteAsync(user);
-        if (result.Succeeded)
-        {
-            return RedirectToAction(nameof(Index));
-        }
-
-        return View("Index", _userManager.Users.ToList());
     }
 }
-

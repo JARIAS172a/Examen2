@@ -1,0 +1,31 @@
+﻿@model IEnumerable<PAV_P2_Grupo_1.Models.ApplicationUser>
+
+<h2>Lista de Usuarios</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Email</th>
+            <th>Dirección</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Nombre</td>
+                <td>@user.Apellidos</td>
+                <td>@user.Email</td>
+                <td>@user.Direccion</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = user.Id })">Editar</a> |
+                    <a href="@Url.Action("Delete", new { id = user.Id })">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

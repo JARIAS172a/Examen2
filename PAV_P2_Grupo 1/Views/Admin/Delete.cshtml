@@ -1,0 +1,10 @@
+﻿@model PAV_P2_Grupo_1.Models.ApplicationUser
+
+<h2>¿Estás seguro de que deseas eliminar a @Model.Nombre @Model.Apellidos?</h2>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Eliminar</button>
+    <a asp-action="Index">Cancelar</a>
+</form>
+

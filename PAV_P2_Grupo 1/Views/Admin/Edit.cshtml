@@ -1,0 +1,24 @@
+﻿@model PAV_P2_Grupo_1.Models.ApplicationUser
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label asp-for="Apellidos"></label>
+        <input asp-for="Apellidos" />
+    </div>
+    <div>
+        <label asp-for="Direccion"></label>
+        <input asp-for="Direccion" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
