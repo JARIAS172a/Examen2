@@ -53,24 +53,24 @@ namespace PAV_P2_Grupo_1.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> Delete(string id)
-        {
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null)
-                return NotFound();
+        //public async Task<IActionResult> Delete(string id)
+        //{
+        //    var user = await _userManager.FindByIdAsync(id);
+        //    if (user == null)
+        //        return NotFound();
 
-            return View(user);
-        }
+        //    return View(user);
+        //}
 
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(string id)
-        {
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null)
-                return NotFound();
+        //[HttpPost, ActionName("Delete")]
+        //public async Task<IActionResult> DeleteConfirmed(string id)
+        //{
+        //    var user = await _userManager.FindByIdAsync(id);
+        //    if (user == null)
+        //        return NotFound();
 
-            await _userManager.DeleteAsync(user);
-            return RedirectToAction(nameof(Index));
-        }
+        //    await _userManager.DeleteAsync(user);
+        //    return RedirectToAction(nameof(Index));
+        //}
     }
 }
