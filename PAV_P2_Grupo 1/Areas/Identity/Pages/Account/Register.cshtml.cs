@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using PAV_P2_Grupo_1.Models;
 
+
 namespace PAV_P2_Grupo_1.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
@@ -29,6 +30,7 @@ namespace PAV_P2_Grupo_1.Areas.Identity.Pages.Account
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
@@ -36,7 +38,8 @@ namespace PAV_P2_Grupo_1.Areas.Identity.Pages.Account
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -44,6 +47,7 @@ namespace PAV_P2_Grupo_1.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -139,6 +143,31 @@ namespace PAV_P2_Grupo_1.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+
+                    //Aquí validamos si los roles existen sino se crean
+                    if (!await _roleManager.RoleExistsAsync("Administrador"))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole("Administrador"));
+                        await _roleManager.CreateAsync(new IdentityRole("Cliente"));
+                    }
+
+                    //Obtenemos el rol seleccionado
+                    string rol = Request.Form["radUsuarioRole"].ToString();
+
+                    //Validamos si el rol seleccionado es Admin y si lo es lo agregamos
+                    if (rol == "Administrador")
+                    {
+                        await _userManager.AddToRoleAsync(user, "Administrador");
+                    }
+                    else
+                    {
+                            await _userManager.AddToRoleAsync(user, "Cliente");                        
+                    }
+
+
+
+
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);

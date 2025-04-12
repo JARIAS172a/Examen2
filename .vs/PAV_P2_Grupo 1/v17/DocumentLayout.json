@@ -1,34 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\",
+  "WorkspaceRootPath": "C:\\Proyectos VisualStudio\\Examen2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\proyectos visualstudio\\examen2\\pav_p2_grupo 1\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\proyectos visualstudio\\examen2\\pav_p2_grupo 1\\models\\maquinarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\models\\maquinarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,93 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "styles.css",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAAcsAAAAAAAAAAAiwBQsAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-12T09:25:18.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DBInitializer.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T09:17:31.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Program.cs",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T09:17:19.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-12T08:36:53.485Z",
+              "Title": "Maquinarias.cs",
+              "DocumentMoniker": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
+              "ToolTip": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T20:34:30.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T22:37:36.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA9wCYAAAAgAAAAAAAAAA==",
+              "Title": "InventarioController.cs",
+              "DocumentMoniker": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\Controllers\\InventarioController.cs",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\InventarioController.cs",
+              "ToolTip": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\Controllers\\InventarioController.cs",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\InventarioController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAkwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T06:41:38.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwEcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T22:09:40.785Z",
+              "WhenOpened": "2025-04-12T20:24:26.849Z",
               "EditorCaption": ""
             }
           ]
