@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hc5CjIwjsfBT2j93qXx1U064W3VJ5X0sNlNOI3Hh2EU=",
+  "Hash": "MMiB5XRFGs+P1ORh4/QLr4PBHU1HDupHqXl0mXSFf14=",
   "Source": "PAV_P2_Grupo 1",
   "BasePath": "_content/PAV_P2_Grupo 1",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\imagenes\\productos\\83be6aef-1b50-4df7-983a-ac86afb763f3.jpg",
+      "SourceId": "PAV_P2_Grupo 1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\",
+      "BasePath": "_content/PAV_P2_Grupo 1",
+      "RelativePath": "imagenes/productos/83be6aef-1b50-4df7-983a-ac86afb763f3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\productos\\83be6aef-1b50-4df7-983a-ac86afb763f3.jpg"
     },
     {
       "Identity": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\images\\fondo-finca.jpg",

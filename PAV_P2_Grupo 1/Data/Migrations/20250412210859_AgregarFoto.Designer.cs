@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PAV_P2_Grupo_1.Data;
 
@@ -11,9 +12,11 @@ using PAV_P2_Grupo_1.Data;
 namespace PAV_P2_Grupo_1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250412210859_AgregarFoto")]
+    partial class AgregarFoto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -253,6 +256,11 @@ namespace PAV_P2_Grupo_1.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ImagenRuta")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -306,7 +314,7 @@ namespace PAV_P2_Grupo_1.Data.Migrations
                     b.ToTable("Preguntas");
                 });
 
-            modelBuilder.Entity("PAV_P2_Grupo_1.Models.Productos", b =>
+            modelBuilder.Entity("Productos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -322,11 +330,6 @@ namespace PAV_P2_Grupo_1.Data.Migrations
                     b.Property<string>("IdUsuarioCreador")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ImagenRuta")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -416,7 +419,7 @@ namespace PAV_P2_Grupo_1.Data.Migrations
                     b.Navigation("UsuarioCreador");
                 });
 
-            modelBuilder.Entity("PAV_P2_Grupo_1.Models.Productos", b =>
+            modelBuilder.Entity("Productos", b =>
                 {
                     b.HasOne("PAV_P2_Grupo_1.Models.ApplicationUser", "UsuarioCreador")
                         .WithMany()

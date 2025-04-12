@@ -24,7 +24,10 @@ namespace PAV_P2_Grupo_1.Models
         [MaxLength(50)]
         public string Modelo { get; set; }
 
+       
+
         [ForeignKey("IdUsuarioCreadorM")]
         public ApplicationUser UsuarioCreador { get; set; }
+
     }
 }

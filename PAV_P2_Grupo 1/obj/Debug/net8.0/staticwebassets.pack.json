@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\imagenes\\productos\\83be6aef-1b50-4df7-983a-ac86afb763f3.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\productos\\83be6aef-1b50-4df7-983a-ac86afb763f3.jpg"
+    },
+    {
       "Id": "C:\\Proyectos VisualStudio\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\images\\fondo-finca.jpg",
       "PackagePath": "staticwebassets\\images\\fondo-finca.jpg"
     },
