@@ -1,74 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\",
+  "WorkspaceRootPath": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\models\\preguntas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\models\\preguntas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\models\\maquinarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\models\\maquinarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|c:\\users\\marco\\onedrive\\escritorio\\progra avanzada\\examen\\examen2\\pav_p2_grupo 1\\data\\migrations\\20250408231705_primeraprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\data\\migrations\\20250408231705_primeraprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|d:\\desarrollo\\vsc2022\\parcial2_pav\\v2\\examen2\\pav_p2_grupo 1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0950B39F-5A21-4A09-BCB9-BDAF1BF7A5DF}|PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj|solutionrelative:pav_p2_grupo 1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,211 +70,94 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "styles.css",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\wwwroot\\css\\styles.css",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\wwwroot\\css\\styles.css*",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\wwwroot\\css\\styles.css*",
+              "ViewState": "AgIAAAosAAAAAAAAAAAiwBUsAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T09:25:18.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DBInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
               "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
               "RelativeToolTip": "PAV_P2_Grupo 1\\Data\\DBInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T23:49:40.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:02:18.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T22:37:36.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Delete.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Admin\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Delete.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Admin\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T22:36:34.643Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T09:17:31.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Edit.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Admin\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Edit.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Admin\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T22:34:39.643Z"
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Program.cs",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T09:17:19.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABZAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwE8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T22:27:32.895Z",
+              "WhenOpened": "2025-04-12T08:36:53.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAQwIoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T03:00:42.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwLwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T02:52:35.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwEcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T22:09:40.785Z",
+              "WhenOpened": "2025-04-11T22:37:36.502Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20250408231705_primeraPrueba.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\Migrations\\20250408231705_primeraPrueba.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Data\\Migrations\\20250408231705_primeraPrueba.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\Migrations\\20250408231705_primeraPrueba.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Data\\Migrations\\20250408231705_primeraPrueba.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:17:05.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\appsettings.json",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\appsettings.json",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\appsettings.json",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T23:14:05.096Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Program.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Program.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwDQAAAAXAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wCYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:13:34.38Z"
+              "WhenOpened": "2025-04-12T06:41:38.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V2\\Examen2\\PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "PAV_P2_Grupo 1\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwEcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:12:57.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Productos.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Productos.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Models\\Productos.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Productos.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Models\\Productos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:12:54.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Preguntas.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Preguntas.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Models\\Preguntas.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Preguntas.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Models\\Preguntas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:12:53.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Maquinarias.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Models\\Maquinarias.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:12:52.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "PAV_P2_Grupo 1\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\marco\\OneDrive\\Escritorio\\Progra Avanzada\\Examen\\Examen2\\PAV_P2_Grupo 1\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "PAV_P2_Grupo 1\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:12:48.887Z"
+              "WhenOpened": "2025-04-09T22:09:40.785Z",
+              "EditorCaption": ""
             }
           ]
         }

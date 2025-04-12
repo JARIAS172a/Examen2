@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+    .contacto-section {
+        padding: 4rem 2rem;
+        font-family: 'Playfair Display', serif;
+        background-color: #f4f7f2;
+        color: #2d3e2f;
+    }
+
+    .contacto-title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #2e4d25;
+    }
+
+    .contacto-subtitle {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #6b8e23;
+    }
+
+    .contacto-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .contacto-info,
+    .contacto-form {
+        flex: 1 1 300px;
+    }
+
+        .contacto-info h4 {
+            margin-top: 1rem;
+            color: #3f5d3f;
+        }
+
+        .contacto-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacto-form input,
+        .contacto-form textarea {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+        }
+
+        .contacto-form button {
+            padding: 0.75rem;
+            background-color: #6b8e23;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .contacto-form button:hover {
+                background-color: #557a1f;
+            }
+</style>
+
+<section class="contacto-section">
+    <h1 class="contacto-title">Contáctanos</h1>
+    <p class="contacto-subtitle">Estamos aquí para ayudarte</p>
+
+    <div class="contacto-content">
+        <!-- Información -->
+        <div class="contacto-info">
+            <p>Si tienes preguntas sobre nuestros productos, visitas guiadas o cualquier otra inquietud, no dudes en escribirnos o llamarnos.</p>
+            <h4>Dirección</h4>
+            <p>Finca Agricola, San José, Costa Rica</p>
+            <h4>Teléfono</h4>
+            <p>+506 1234-5678</p>
+            <h4>Correo electrónico</h4>
+            <p>info@fincaagricola.cr</p>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes, de 8:00 a.m. a 5:00 p.m.</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contacto-form">
+            <form method="post" action="#">
+                <input type="text" placeholder="Nombre completo" required />
+                <input type="email" placeholder="Correo electrónico" required />
+                <textarea rows="5" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Equipo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+    .equipo-section {
+        padding: 4rem 2rem;
+        font-family: 'Playfair Display', serif;
+        background-color: #f0f5ee;
+        color: #333;
+    }
+
+    .equipo-title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #2e4d25;
+    }
+
+    .equipo-subtitle {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #6b8e23;
+    }
+
+    .equipo-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .equipo-block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+        .equipo-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+    .equipo-image {
+        flex: 1;
+        min-width: 280px;
+    }
+
+        .equipo-image img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+    .equipo-text {
+        flex: 1;
+        min-width: 280px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+</style>
+
+<section class="equipo-section">
+    <div class="equipo-content">
+        <h1 class="equipo-title">Nuestro Equipo de Trabajo</h1>
+        <p class="equipo-subtitle">Tecnología y tradición al servicio del campo</p>
+
+        <!-- Bloque 1: Tractores -->
+        <div class="equipo-block">
+            <div class="equipo-image">
+                <img src="https://i.blogs.es/70086b/captura-de-pantalla-2022-05-26-a-las-13.17.27/1366_2000.jpeg" alt="Tractor moderno">
+            </div>
+            <div class="equipo-text">
+                <p>
+                    Contamos con tractores de última generación que nos permiten realizar labores de cultivo de manera eficiente, cuidando la integridad del suelo y optimizando los tiempos de trabajo en campo abierto.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 2: Herramientas manuales -->
+        <div class="equipo-block">
+            <div class="equipo-image">
+                <img src="https://ageusa.com/wp-content/uploads/2022/08/4-2-1.jpg" alt="Herramientas manuales">
+            </div>
+            <div class="equipo-text">
+                <p>
+                    Las herramientas manuales siguen siendo parte esencial de nuestras tareas diarias. Su uso permite una conexión directa con la tierra y una atención detallada al cuidado de cada cultivo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 3: Sistemas de riego -->
+        <div class="equipo-block">
+            <div class="equipo-image">
+                <img src="https://grupohidraulica.com/wp-content/uploads/2022/11/sistemas-de-riego-1200x800-1-1024x683.jpg" alt="Sistema de riego">
+            </div>
+            <div class="equipo-text">
+                <p>
+                    Hemos implementado sistemas de riego automatizados que aseguran una distribución equitativa del agua, adaptándose a las necesidades de cada cultivo y promoviendo un uso sostenible del recurso hídrico.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 4: Tecnología y sensores -->
+        <div class="equipo-block">
+            <div class="equipo-image">
+                <img src="https://elperiodicodevillena.com/wp-content/uploads/2022/12/tecnologia-agricola.jpg" alt="Tecnología agrícola">
+            </div>
+            <div class="equipo-text">
+                <p>
+                    La incorporación de tecnología en nuestros procesos incluye el uso de sensores, aplicaciones móviles y monitoreo remoto para asegurar la salud de los cultivos y una toma de decisiones más informada.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+

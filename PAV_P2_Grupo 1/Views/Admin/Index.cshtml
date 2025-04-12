@@ -1,31 +1,47 @@
 ﻿@model IEnumerable<PAV_P2_Grupo_1.Models.ApplicationUser>
 
-<h2>Lista de Usuarios</h2>
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+    <li class="breadcrumb-item active">Usuarios</li>
+</ol>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Email</th>
-            <th>Dirección</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
-            <tr>
-                <td>@user.Nombre</td>
-                <td>@user.Apellidos</td>
-                <td>@user.Email</td>
-                <td>@user.Direccion</td>
-                <td>
-                    <a href="@Url.Action("Edit", new { id = user.Id })">Editar</a>@*  |
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Lista de usuarios
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Nombre</td>
+                        <td>@user.Apellidos</td>
+                        <td>@user.Email</td>
+                        <td>@user.Direccion</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = user.Id })">Editar</a>@*  |
                     <a href="@Url.Action("Delete", new { id = user.Id })">Eliminar</a> *@
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
 
+    </div>
+</div>
+
+@section Scripts {    
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/datatables-simple-demo.js"></script>
+}

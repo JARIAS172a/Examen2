@@ -18,7 +18,25 @@ namespace PAV_P2_Grupo_1.Controllers
             return View();
         }
 
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Historia()
+        {
+            return View();
+        }
+        public IActionResult Equipo()
+        {
+            return View();
+        }
+        public IActionResult Contacto()
         {
             return View();
         }

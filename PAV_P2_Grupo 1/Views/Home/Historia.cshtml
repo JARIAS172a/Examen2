@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Historia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+    .historia-section {
+        padding: 4rem 2rem;
+        font-family: 'Playfair Display', serif;
+        background-color: #f5f5f0;
+        color: #333;
+    }
+
+    .historia-title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #2e4d25;
+    }
+
+    .historia-subtitle {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #6b8e23;
+    }
+
+    .historia-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .historia-block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .historia-block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .historia-image {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .historia-image img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .historia-text {
+        flex: 1;
+        min-width: 280px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+</style>
+
+<section class="historia-section">
+    <div class="historia-content">
+        <h1 class="historia-title">Nuestra Historia</h1>
+        <p class="historia-subtitle">Una tradición que florece con cada amanecer</p>
+
+        <!-- Bloque 1 -->
+        <div class="historia-block">
+            <div class="historia-image">
+                <img src="https://www.sabor.co.uk/wp-content/uploads/2020/09/Finca-Las-Cruces-new-planting.jpg" alt="Historia de la finca">
+            </div>
+            <div class="historia-text">
+                <p>
+                    Fundada en las fértiles tierras de nuestra región, la Finca Agrícola nació del deseo de vivir en armonía con la naturaleza y producir con conciencia. Desde sus humildes comienzos, la finca ha evolucionado sin perder de vista sus raíces.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 2 -->
+        <div class="historia-block">
+            <div class="historia-image">
+                <img src="https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2024/08/Zanahoria-de-colores-Walmart-Eurosemillas-14-1024x731.jpg" alt="Tradición agrícola">
+            </div>
+            <div class="historia-text">
+                <p>
+                    A lo largo de los años, generaciones de agricultores han cuidado estas tierras con dedicación, sembrando no solo cultivos, sino valores: respeto, trabajo duro y amor por lo que se hace. Nuestra finca es el reflejo vivo de esa herencia.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 3 -->
+        <div class="historia-block">
+            <div class="historia-image">
+                <img src="https://institutodelagua.es/wp-content/uploads/2024/02/cambio-climatico-en-costa-rica-impacto-y-soluciones-para-un-futuro-sostenible-768x458.png" alt="Futuro sostenible">
+            </div>
+            <div class="historia-text">
+                <p>
+                    Hoy, miramos al futuro con esperanza, apostando por prácticas sostenibles y una producción responsable. Queremos que cada visita a la finca sea una experiencia auténtica que conecte con lo natural y lo esencial.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
