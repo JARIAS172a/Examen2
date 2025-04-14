@@ -21,6 +21,7 @@ wwwroot\imagenes\productos\b3801b67-66f4-468d-9574-adae2bfafd0c.jpeg
 wwwroot\imagenes\productos\ecc9fd34-f9a9-4afc-b99d-48ccde7c7643.jpg
 wwwroot\imagenes\productos\fa93fbd9-404e-4b1f-9aef-ab033532982c.jpg
 wwwroot\images\fondo-finca.jpg
+wwwroot\js\CarouselDashboard.js
 wwwroot\js\datatables-simple-demo.js
 wwwroot\js\scripts.js
 wwwroot\js\site.js

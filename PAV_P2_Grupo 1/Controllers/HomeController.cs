@@ -1,16 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using PAV_P2_Grupo_1.Models;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
+using PAV_P2_Grupo_1.Data;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PAV_P2_Grupo_1.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -18,8 +24,20 @@ namespace PAV_P2_Grupo_1.Controllers
             return View();
         }
 
-        public IActionResult Dashboard()
+        public async Task<IActionResult> Dashboard()
         {
+            var ultimasPreguntas = await _context.Preguntas
+            .OrderByDescending(p => p.Fecha)
+            .Take(5)
+            .ToListAsync();
+
+            var topProductos = await _context.Productos
+            .OrderByDescending(p => p.Precio) 
+            .Take(3)
+            .ToListAsync();
+
+            ViewBag.UltimasPreguntas = ultimasPreguntas;
+            ViewBag.TopProductos = topProductos;
             return View();
         }
 

@@ -5,23 +5,19 @@
     <li class="breadcrumb-item active">Usuarios</li>
 </ol>
 
-
-<div class="row">
-    <div class="col-sm-3">
-        <button type="button" class="btn btn-primary" onclick="location.href='/Identity/Account/Register'" ">
-            <i class="fas fa-plus-circle"></i> Crear Nuevo Usuario
-        </button>
-    </div>
-</div>
-
-
 <div class="card mb-4">
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
         Lista de usuarios
     </div>
     <div class="card-body">
-
+        <div class="row">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-primary" onclick="location.href='/Identity/Account/Register'" ">
+                    <i class="fas fa-plus-circle"></i> Crear Nuevo Usuario
+                </button>
+            </div>
+        </div>
         <hr />
         <table id="datatablesSimple">
             <thead>
@@ -34,26 +30,30 @@
                 </tr>
             </thead>
             <tbody>
-        @foreach (var user in Model)
-        {
+                @foreach (var user in Model)
+                {
                     <tr>
                         <td>@user.Nombre</td>
                         <td>@user.Apellidos</td>
                         <td>@user.Email</td>
                         <td>@user.Direccion</td>
                         <td>
-                            <a href="@Url.Action("Edit", new { id = user.Id })">Editar</a>@*  |
-                        <a href="@Url.Action("Delete", new { id = user.Id })">Eliminar</a> *@
+                            <a class="btn btn-sm btn-warning me-1" href="@Url.Action("Edit", new { id = user.Id })">
+                                <i class="fas fa-edit"></i> Editar
+                            </a>@*  |
+                            <a class="btn btn-sm btn-danger me-1" href="@Url.Action("Delete", new { id = user.Id })">
+                                <i class="fas fa-edit"></i> Eliminar
+                            </a> *@
                         </td>
                     </tr>
-        }
+                }
             </tbody>
         </table>
 
     </div>
 </div>
 
-        @section Scripts {
+@section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-    <script src="~/js/datatables-simple-demo.js"></script>
-        }
+    <script src="@Url.Content("~/js/datatables-simple-demo.js")"></script>
+}

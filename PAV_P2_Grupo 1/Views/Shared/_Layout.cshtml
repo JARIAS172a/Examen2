@@ -27,25 +27,18 @@
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
             <i class="fas fa-bars"></i>
         </button>
-        <!-- Navbar Search-->
-        @* <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form> *@
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto">
             @if (SignInManager.IsSignedIn(User))
             {
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" 
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user fa-fw"></i>
-                        </a>
+                    </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index">                                
+                            <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index">
                                 Perfil
                             </a>
                         </li>
@@ -59,7 +52,7 @@
                             </form>
                         </li>
                     </ul>
-                </li>                
+                </li>
             }
             else
             {
@@ -71,7 +64,7 @@
                     <a class="nav-link text-gray-600" asp-area="Identity" asp-page="/Account/Login">Iniciar Sesión</a>
                 </li>
             }
-            
+
         </ul>
     </nav>
     <div id="layoutSidenav">
@@ -80,16 +73,13 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Inicio</div>
-
-                        <div class="sb-sidenav-menu-heading">Menú</div>
-
                         @if (User.IsInRole("Administrador"))
                         {
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                        }                        
+                        }
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="fas fa-house"></i></div>
                             Inicio
@@ -119,7 +109,7 @@
                                     <a class="nav-link" asp-area="" asp-controller="Preguntas" asp-action="Index">Preguntas</a>
                                 </nav>
                             </div>
-                        }                        
+                        }
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSN" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-info-circle"></i></div>
                             Sobre Nosotros
@@ -132,7 +122,7 @@
                                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
                             </nav>
                         </div>
-                        <div class="sb-sidenav-menu-heading">Políticas</div>                        
+                        <div class="sb-sidenav-menu-heading">Políticas</div>
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">
                             <div class="sb-nav-link-icon"><i class="fas fa-shield"></i></div>
                             Políticas de Privacidad
@@ -148,9 +138,9 @@
                     <div class="sb-sidenav-footer bg-success">
                         <div class="small">Iniciaste sesión como:</div>
                         @User.Identity?.Name
-                    </div>                   
+                    </div>
                 }
-                
+
             </nav>
         </div>
         <div id="layoutSidenav_content">

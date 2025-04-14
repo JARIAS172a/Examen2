@@ -51,145 +51,94 @@
         </div>
         <div class="row">
             <div class="col-xl-6">
-                <div class="card mb-4">
+                <div class="card mb-4" style="height: 263px;">
                     <div class="card-header">
-                        <i class="fas fa-chart-area me-1"></i>
-                        Ventas Diarias
+                        <i class="fas fa-question-circle me-1"></i>
+                        Últimas Preguntas
                     </div>
-                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                    <div class="card-body">
+                        <div id="preguntasCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                @if (ViewBag.UltimasPreguntas != null)
+                                {
+                                    var preguntas = (List<PAV_P2_Grupo_1.Models.Preguntas>)ViewBag.UltimasPreguntas;
+                                    for (int i = 0; i < preguntas.Count; i++)
+                                    {
+                                        var p = preguntas[i];
+                                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                                            <h5 class="text-primary">@p.Titulo</h5>
+                                            <p>@p.Contenido</p>
+                                            <p class="text-muted" style="font-size: small;">@p.Fecha.ToString("dd/MM/yyyy HH:mm")</p>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="carousel-item active">
+                                        <p>No hay preguntas disponibles.</p>
+                                    </div>
+                                }
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#preguntasCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#preguntasCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="col-xl-6">
                 <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-chart-bar me-1"></i>
-                        Ventas Mensuales
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-star me-2"></i>Productos Destacados</span>
+                        <div>
+                            <button class="btn btn-sm btn-outline-secondary me-1" id="btn-prev-producto">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" id="btn-next-producto">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                    <div class="card-body">
+                        <div id="productos-carousel" class="overflow-hidden position-relative" style="height: 250px;">
+                            <div class="d-flex transition-slide" style="width: max-content;">
+                                @foreach (var producto in (List<PAV_P2_Grupo_1.Models.Productos>)ViewBag.TopProductos)
+                                {
+                                    <div class="me-3" style="min-width: 250px; max-width: 250px;">
+                                        <div class="card h-100 shadow-sm">
+                                            @if (!string.IsNullOrEmpty(producto.ImagenRuta))
+                                            {
+                                                <img src="@producto.ImagenRuta" class="card-img-top" style="height: 120px; object-fit: cover;" />
+                                            }
+                                            else
+                                            {
+                                                <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 120px;">
+                                                    <span class="text-muted">Sin imagen</span>
+                                                </div>
+                                            }
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1">@producto.Nombre</h6>
+                                                <p class="card-text text-muted" style="font-size: 0.85em;">@producto.Descripcion</p>
+                                                <p class="fw-bold mb-0">₡@producto.Precio.ToString("N2")</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="card mb-4">
-            <div class="card-header">
-                <i class="fas fa-table me-1"></i>
-                Empleados
-            </div>
-            <div class="card-body">
-                <table id="datatablesSimple">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Ricardo González</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                        </tr>
-                        <tr>
-                            <td>Jose Morales</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr>
-                            <td>Josue Arias</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>66</td>
-                            <td>2009/01/12</td>
-                            <td>$86,000</td>
-                        </tr>
-                        <tr>
-                            <td>Marco Rivera</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>Edinburgh</td>
-                            <td>22</td>
-                            <td>2012/03/29</td>
-                            <td>$433,060</td>
-                        </tr>
-                        <tr>
-                            <td>Jeikel Obando</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>33</td>
-                            <td>2008/11/28</td>
-                            <td>$162,700</td>
-                        </tr>
-                        <tr>
-                            <td>Jeison Bermúdez</td>
-                            <td>Integration Specialist</td>
-                            <td>New York</td>
-                            <td>61</td>
-                            <td>2012/12/02</td>
-                            <td>$372,000</td>
-                        </tr>
-                        <tr>
-                            <td>Walter Molina</td>
-                            <td>Sales Assistant</td>
-                            <td>San Francisco</td>
-                            <td>59</td>
-                            <td>2012/08/06</td>
-                            <td>$137,500</td>
-                        </tr>
-                        <tr>
-                            <td>Jose Alfaro</td>
-                            <td>Integration Specialist</td>
-                            <td>Tokyo</td>
-                            <td>55</td>
-                            <td>2010/10/14</td>
-                            <td>$327,900</td>
-                        </tr>
-                        <tr>
-                            <td>Bernardo Romano</td>
-                            <td>Javascript Developer</td>
-                            <td>San Francisco</td>
-                            <td>39</td>
-                            <td>2009/09/15</td>
-                            <td>$205,500</td>
-                        </tr>
-                        <tr>
-                            <td>Keyla Sánchez</td>
-                            <td>Software Engineer</td>
-                            <td>Edinburgh</td>
-                            <td>23</td>
-                            <td>2008/12/13</td>
-                            <td>$103,600</td>
-                        </tr>
-                        <tr>
-                            <td>Bismark Méndez</td>
-                            <td>Office Manager</td>
-                            <td>London</td>
-                            <td>30</td>
-                            <td>2008/12/19</td>
-                            <td>$90,560</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
+       
     </div>
 </main>
 
@@ -199,4 +148,5 @@
     <script src="~/assets/demo/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="~/js/datatables-simple-demo.js"></script>
+    <script src="~/js/CarouselDashboard.js"></script>
 }

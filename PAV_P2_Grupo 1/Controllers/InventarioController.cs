@@ -22,9 +22,18 @@ namespace PAV_P2_Grupo_1.Controllers
 
         public IActionResult Index()
         {
+            var top3 = _context.Productos
+                .OrderByDescending(p => p.Precio)
+                .Take(3)
+                .Include(p => p.UsuarioCreador)
+                .ToList();
+
             var productos = _context.Productos
                 .Include(p => p.UsuarioCreador)
                 .ToList();
+
+            ViewBag.Top3 = top3;
+
             return View(productos);
         }
 

@@ -9,36 +9,56 @@ namespace PAV_P2_Grupo_1.Controllers
     [Authorize]
     public class PreguntasController : Controller
     {
+        private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public PreguntasController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public PreguntasController(ApplicationDbContext context, IWebHostEnvironment hostingEnvironment, UserManager<ApplicationUser> userManager)
         {
+            _hostingEnvironment = hostingEnvironment;
             _context = context;
             _userManager = userManager;
         }
 
         public IActionResult Index()
         {
-            return View(new Preguntas());
+            return View(/*new Preguntas()*/);
+        }
+
+        [HttpGet]
+        public IActionResult CrearPregunta()
+        {
+            return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CrearPregunta(Preguntas pregunta)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var user = await _userManager.GetUserAsync(User);
-                pregunta.IdUsuarioCreadorP = user.Id;
-                pregunta.Fecha = DateTime.Now;
+                ModelState.Remove(nameof(pregunta.IdUsuarioCreadorP));
+                ModelState.Remove(nameof(pregunta.UsuarioCreador));
 
-                _context.Preguntas.Add(pregunta);
-                await _context.SaveChangesAsync();
+                if (ModelState.IsValid)
+                {
+                    var user = await _userManager.GetUserAsync(User);
+                    pregunta.IdUsuarioCreadorP = user.Id;
+                    pregunta.Fecha = DateTime.Now;
 
-                return Json(new { success = true });
+                    _context.Preguntas.Add(pregunta);
+                    await _context.SaveChangesAsync();
+
+                    return Json(new { success = true });
+                }
+
+                return Json(new { success = false, errores = ModelState.Values.SelectMany(x => x.Errors).Select(e => e.ErrorMessage) });
             }
-
-            return Json(new { success = false });
+            catch (Exception ex)
+            {
+                return Json(new { success = false, error = ex.Message });
+            }
+            
         }
     }
 }

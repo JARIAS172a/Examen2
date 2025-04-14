@@ -5,6 +5,39 @@
 }
 
 <div class="container mt-4">
+
+    @if (ViewBag.Top3 != null)
+    {
+        <h3 class="mb-4">Top 3 Productos Destacados</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            @foreach (var producto in ViewBag.Top3 as List<PAV_P2_Grupo_1.Models.Productos>)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        @if (!string.IsNullOrEmpty(producto.ImagenRuta))
+                        {
+                            <img src="@producto.ImagenRuta" class="card-img-top" alt="@producto.Nombre" style="height: 200px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="card-img-top d-flex align-items-center justify-content-center bg-secondary text-white" style="height: 200px;">
+                                Sin imagen
+                            </div>
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@producto.Nombre</h5>
+                            <p class="card-text">@producto.Descripcion</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Precio: ₡@producto.Precio.ToString("N2")</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+
     <h2 class="mb-4">Listado de Productos</h2>
 
     <div class="mb-3 text-end">

@@ -8358,23 +8358,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hogar\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {},
+    "D:\\VS Code SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Examen2ProgramacionAvanzada\\Examen2\\PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj",
+      "projectUniqueName": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V3 Jeikel\\Examen2\\PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj",
       "projectName": "PAV_P2_Grupo 1",
-      "projectPath": "C:\\Examen2ProgramacionAvanzada\\Examen2\\PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj",
-      "packagesPath": "C:\\Users\\Hogar\\.nuget\\packages\\",
-      "outputPath": "C:\\Examen2ProgramacionAvanzada\\Examen2\\PAV_P2_Grupo 1\\obj\\",
+      "projectPath": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V3 Jeikel\\Examen2\\PAV_P2_Grupo 1\\PAV_P2_Grupo 1.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "D:\\Desarrollo\\VSC2022\\Parcial2_PAV\\V3 Jeikel\\Examen2\\PAV_P2_Grupo 1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\VS Code SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hogar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8401,7 +8401,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -8455,7 +8455,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
