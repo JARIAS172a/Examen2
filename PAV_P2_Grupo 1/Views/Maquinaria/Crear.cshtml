@@ -1,0 +1,41 @@
+﻿@model PAV_P2_Grupo_1.Models.Maquinarias
+@{
+    ViewData["Title"] = "Crear Maquinaria";
+}
+
+<div class="container mt-4">
+    <h2>Registrar Maquinaria</h2>
+
+    <form asp-action="Crear" method="post">
+        @Html.AntiForgeryToken()
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="mb-3">
+            <label asp-for="Nombre" class="form-label"></label>
+            <input asp-for="Nombre" class="form-control" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descripcion" class="form-label"></label>
+            <textarea asp-for="Descripcion" class="form-control"></textarea>
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Marca" class="form-label"></label>
+            <input asp-for="Marca" class="form-control" />
+            <span asp-validation-for="Marca" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Modelo" class="form-label"></label>
+            <input asp-for="Modelo" class="form-control" />
+            <span asp-validation-for="Modelo" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

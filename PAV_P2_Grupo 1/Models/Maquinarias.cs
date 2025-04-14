@@ -1,33 +1,31 @@
-﻿using PAV_P2_Grupo_1.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PAV_P2_Grupo_1.Models
 {
     public class Maquinarias
     {
-        [Key]
         public int Id { get; set; }
 
-        [Required]
-        public string IdUsuarioCreadorM { get; set; }
-
-        [MaxLength(100)]
+        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [StringLength(100, ErrorMessage = "Máximo 100 caracteres")]
         public string Nombre { get; set; }
 
-        [MaxLength(255)]
+        [Required(ErrorMessage = "La descripción es obligatoria")]
+        [StringLength(500, ErrorMessage = "Máximo 500 caracteres")]
         public string Descripcion { get; set; }
 
-        [MaxLength(50)]
+        [Required(ErrorMessage = "La marca es obligatoria")]
+        [StringLength(100, ErrorMessage = "Máximo 100 caracteres")]
         public string Marca { get; set; }
 
-        [MaxLength(50)]
+        [Required(ErrorMessage = "El modelo es obligatorio")]
+        [StringLength(100, ErrorMessage = "Máximo 100 caracteres")]
         public string Modelo { get; set; }
 
-       
+        public string? IdUsuarioCreadorM { get; set; }
 
         [ForeignKey("IdUsuarioCreadorM")]
-        public ApplicationUser UsuarioCreador { get; set; }
-
+        public ApplicationUser? UsuarioCreador { get; set; }
     }
 }
