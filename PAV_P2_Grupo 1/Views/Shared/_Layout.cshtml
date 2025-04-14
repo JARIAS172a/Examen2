@@ -80,6 +80,9 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Inicio</div>
+
+                        <div class="sb-sidenav-menu-heading">Menú</div>
+
                         @if (User.IsInRole("Administrador"))
                         {
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">

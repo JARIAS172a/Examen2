@@ -1,0 +1,60 @@
+﻿@model PAV_P2_Grupo_1.Models.Preguntas
+
+@{
+    ViewData["Title"] = "Preguntas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Realizar una Pregunta</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form asp-action="CrearPregunta" id="formPregunta">
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Titulo, new { @class = "form-label fw-bold" })
+                            @Html.TextBoxFor(m => m.Titulo, new { @class = "form-control", placeholder = "Título de la pregunta" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Contenido, new { @class = "form-label fw-bold" })
+                            @Html.TextAreaFor(m => m.Contenido, new { @class = "form-control", rows = 5, placeholder = "Escribe tu pregunta aquí..." })
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Enviar Pregunta</button>
+                    </form>
+
+                    <div id="mensajeConfirmacion" class="alert alert-success mt-3 d-none" role="alert">
+                        Pregunta enviada correctamente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('#formPregunta').on('submit', function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: $(this).attr("action"),
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function (respuesta) {
+                        if (respuesta.success) {
+                            $('#mensajeConfirmacion').removeClass('d-none');
+                            $('#formPregunta')[0].reset();
+                            setTimeout(() => {
+                                $('#mensajeConfirmacion').addClass('d-none');
+                            }, 3000);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}
